@@ -1,0 +1,227 @@
+.process {
+    background-color: #E5E5E5;
+
+    &__inner {
+        padding: 110px 0 75px;
+
+        @include r(768) {
+            padding: 40px 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 85px;
+
+        @include r(768) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__tabs {
+
+        @include r(1150) {
+            display: flex;
+        }
+
+        @include r(500) {
+            display: block;
+        }
+    }
+
+    &__selectors {
+        display: flex;
+
+        @include r(1150) {
+            display: block;
+            width: fit-content;
+        }
+
+        @include r(500) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__tab {
+        height: 55px;
+        padding-top: 17px;
+        max-width: 188px;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px 20px 0px 0px;
+        background-color: $yellow;
+        cursor: pointer;
+        transition: all .3s;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 19px;
+
+        @include r(1150) {
+            height: 75px;
+            padding-left: 42px;
+            padding-right: 15px;
+            border-radius: 20px 0 0px 20px;
+        }
+
+        @include r(500) {
+            height: 55px;
+            white-space: nowrap;
+            max-width: 100%;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+
+        &+& {
+            margin-left: 4px;
+
+            @include r(1150) {
+                margin-left: 0;
+            }
+        }
+
+        &.active {
+            background-color: #F8F8F8;
+        }
+    }
+
+    &__category {
+        display: inline-block;
+        padding-left: 30px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25px;
+            height: 25px;
+
+            @include r(1150) {
+                top: 8px;
+            }
+
+            @include r(500) {
+                top: 0;
+            }
+        }
+
+        &--call {
+            &::before {
+                background-image: url(../images/tab-icon-1.svg);
+            }
+        }
+
+        &--measure {
+            &::before {
+                background-image: url(../images/tab-icon-2.svg);
+            }
+        }
+
+        &--preparing {
+            &::before {
+                background-image: url(../images/tab-icon-3.svg);
+            }
+        }
+
+        &--work {
+            &::before {
+                background-image: url(../images/tab-icon-4.svg);
+            }
+        }
+
+        &--report {
+            &::before {
+                background-image: url(../images/tab-icon-5.svg);
+            }
+        }
+
+        &--result {
+            &::before {
+                background-image: url(../images/tab-icon-6.svg);
+            }
+        }
+    }
+
+    &__items {
+        background-color: #F8F8F8;
+        border-radius: 0px 0px 20px 20px;
+        padding: 40px 50px;
+
+        @include r(1150) {
+            border-radius: 0 20px 20px 0;
+        }
+
+        @include r(768) {
+            padding: 20px;
+        }
+    }
+
+    &__item {
+        opacity: 0;
+        height: 0;
+
+        &:first-child {
+            opacity: 1;
+            height: auto;
+        }
+    }
+
+    &__text {
+        margin-bottom: 32px;
+        color: #292929;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        text-transform: uppercase;
+
+        @include r(768) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        @include r(500) {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    &__description-title {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    &__list {
+        margin-left: 20px;
+    }
+
+    &__list-item {
+        font-size: 14px;
+        line-height: 21px;
+        padding-left: 10px;
+        position: relative;
+
+        &+& {
+            margin-top: 10px;
+        }
+
+        &::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            border-radius: 50%;
+        }
+    }
+}
+

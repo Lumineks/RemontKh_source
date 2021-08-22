@@ -1,0 +1,152 @@
+.header {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    background-color: #000;
+
+    &__inner {
+        height: 92px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        max-width: 281px;
+        height: 57px;
+
+        @include r(500) {
+            max-width: 190px;
+            height: 45px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @include r(500) {
+            object-fit: contain;
+        }
+    }
+
+    &__menu {
+        transition: left .3s;
+
+        @include r(940) {
+            position: absolute;
+            left: -100%;
+            top: 0;
+            height: calc(var(--vh, 1vh) * 100);
+            width: 50%;
+            padding-top: 90px;
+            background-color: #000;
+        }
+
+        @include r(768) {
+            width: 80%;
+        }
+
+        &.active {
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        @include r(940) {
+            display: block;
+        }
+    }
+
+    &__item {       
+        &+& {
+            margin-left: 24px;
+
+            @include r(940) {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 600px;
+        color: #fff;
+        transition: all .3s;
+
+        @include r(940) {
+            display: block;
+            padding-left: 20px;
+            font-size: 24px;
+        }
+        &.active {
+            color: $yellow;
+        }
+        &:hover {
+            color: $yellow;
+        }
+
+        &:active {
+            text-shadow: 4px 4px 2px rgba($yellow, 0.6);
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @include r(940) {
+            display: block;
+            position: relative;
+            width: 35px;
+            height: 24px;
+            z-index: 20;
+
+            span {
+                background-color: #fff;
+                width: 100%;
+                height: 4px;
+                position: absolute;
+                top: 10px;
+                transition: all .3s;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                background-color: #fff;
+                transition: all .3s;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+            &.active {
+                &::before {
+                    transform: rotate(45deg);
+                    top: 10px;
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                    bottom: 10px;
+                }
+
+                span {
+                    transform: scale(0);
+                }
+            }
+        }
+    }
+}

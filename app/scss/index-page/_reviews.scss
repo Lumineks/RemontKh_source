@@ -1,0 +1,99 @@
+.reviews {
+    &__inner {
+        text-align: center;
+        position: relative;
+    }
+
+    &__title {
+        position: absolute;
+        top: 33px;
+        left: 50%;
+        z-index: 6;
+        transform: translateX(-50%);
+        color: #fff;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__text {
+        max-width: 960px;
+        margin: 0 auto 60px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #fff;
+
+        @include r(768) {
+            font-size: 20px;
+        }
+
+        @include r(500) {
+            font-size: 18px;
+        }
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto 50px;
+        max-width: 174px;
+        height: 174px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: $yellow;
+
+        @include r(768) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &__address {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #B3B3B3;
+
+        @include r(768) {
+            font-size: 16px;
+        }
+    }
+
+    .swiper-slide {
+        padding-top: 172px;
+        min-height: 840px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include r(768) {
+            padding: 90px 0 110px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: 2px solid #464342;
+        transition: border-color .3s, background-color .3s;
+        outline: transparent;        
+    }
+
+    .swiper-pagination-bullet-active {
+        border-color: transparent;
+        background-color: #fff;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 7px 60px;
+    }
+}
