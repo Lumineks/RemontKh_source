@@ -7,3 +7,6 @@
 build/
 node_modules/
 app/css/*
+app/js/main.min.js
+app/images/
+app/fonts/

@@ -329,7 +329,7 @@ function elmYPosition(eID) {
 
 
 function smoothScroll(eID) {
-    const section = document.querySelector(eId);
+    const section = document.querySelector(eID);
     window.scroll({
         top: getCoords(section),
         left: 0,
