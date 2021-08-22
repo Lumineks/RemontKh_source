@@ -8,22 +8,27 @@
     },
     "author": "Michail Novos",
     "license": "ISC",
-    "dependencies": {},
-    "devDependencies": {
-        "animate.css": "^4.1.0",
-        "browser-sync": "^2.26.10",
-        "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^7.0.1",
-        "gulp-concat": "^2.6.1",
-        "gulp-cssmin": "^0.2.0",
-        "gulp-file-include": "^2.2.2",
-        "gulp-rename": "^2.0.0",
-        "gulp-sass": "^4.1.0",
-        "gulp-uglify": "^3.0.2",
+    "dependencies": {
+        "animate.css": "^4.1.1",
         "mm-jsr": "^1.1.6",
         "normalize.css": "^8.0.1",
         "smoothscroll-polyfill": "^0.4.4",
-        "swiper": "^6.0.4",
+        "swiper": "^6.8.3",
         "wow.js": "^1.2.2"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.27.5",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-clean": "^0.4.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssmin": "^0.2.0",
+        "gulp-file-include": "^2.3.0",
+        "gulp-sass": "^4.1.1",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-svg-sprite": "^1.5.0",
+        "gulp-tinypng-compress": "^1.2.5",
+        "gulp-ttf2woff2": "^4.0.1",
+        "gulp-uglify-es": "^3.0.0"
     }
 }
