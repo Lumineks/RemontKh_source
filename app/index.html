@@ -9,631 +9,627 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <div class="content">
-            
-            <header class="header">
-                <div class="container">
-                    <div class="header__inner">
-                        <div class="header__burger">
-                            <span></span>
-                        </div>
-            
-                        <a class="header__logo" href="#">
-                            <img class="header__image" src="images/logo.png" alt="">
-                        </a>
-                        
-                        <nav class="header__menu">
-                            <ul class="header__list">
-                                <li class="header__item">
-                                    <a class="header__link" href="#works">
-                                        Примеры работ 
-                                    </a>
-                                </li>
-                                <li class="header__item">
-                                    <a class="header__link" href="#types">
-                                        Виды ремонтов
-                                    </a>
-                                </li>
-                                <li class="header__item">
-                                    <a class="header__link" href="#process">
-                                        Схема работы с нами
-                                    </a>
-                                </li>
-                                <li class="header__item">
-                                    <a class="header__link" href="#price">
-                                        Калькулятор
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            
-            
-            <main class="main">               
-                <section class="preview">
-                    <div class="container">
-                        <div class="preview__inner">
-                            <h1 class="preview__title title section-title">
-                                <span class="extra-bold">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#">
+                    <img class="header__image" src="images/logo.png" width="281" height="57" alt="Логотип">
+                </a>
+                
+                <button class="header__burger" type="button" aria-label="Открыть меню">
+                    <span></span>
+                </button>
+                
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#works">
+                                Примеры работ 
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#types">
+                                Виды ремонтов
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#process">
+                                Схема работы с нами
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#price">
+                                Калькулятор
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="preview">
+            <div class="container">
+                <div class="preview__inner">
+                    <h1 class="preview__title title section-title">
+                        <span class="extra-bold">
                                     Ремонт квартир
                                 </span> под ключ в Харькове
-                            </h1>
-                            <div class="preview__text">
-                                Закажите ремонт Вашей мечты по доступным ценам.
-                            </div>
-                            <ul class="preview__list">
-                                <li class="preview__item">Подскажем с чего начать</li>
-                                <li class="preview__item">Где можно сэкономить</li>
-                                <li class="preview__item">Составим бесплатно смету</li>
-                                <li class="preview__item">Даем гарантию</li>
-                            </ul>
-                            <a class="preview__link btn" href="#">Рассчитать стоимость</a>
-                        </div>
+                    </h1>
+                    <div class="preview__text">
+                        Закажите ремонт Вашей мечты по доступным ценам.
                     </div>
-                
-                    <form class="preview__form decoration wow animate__fadeIn">
-                        <div class="preview__form-title">
-                            Оставьте заявку и мы вам перезвоним
-                        </div>
-                        <label class="preview__label" for="name"></label>
-                        <input class="preview__input preview__input--name" id="name" type="text" placeholder="Имя" required>
-                        <label class="preview__label" for="tel"></label>
-                        <input class="preview__input preview__input--tel" id="tel" type="tel" placeholder="+38 (___) ___-__-__" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                        <button class="preview__btn btn" type="submit">Отправить</button>
-                    </form>
-                </section>
-                
-                
-            
-                <section class="works wow animate__fadeInUpBig" id="works">
-                    <div class="container">
-                        <div class="works__inner">
-                            <h2 class="works__title title section-title">
-                                Наши работы
-                            </h2>
-                
-                            <div class="works__gallery">
-                                <div class="works__slider swiper-container gallery-top">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide works__slide">
-                                            <div class="works__slide-item">
-                                                <div class="works__slide-title">
-                                                    Капитальный ремонт
-                                                </div>
-                                                <ul class="works__list">
-                                                    <li class="works__item">
-                                                        <span class="works__name">Aдресс объекта</span> : В. Барсовой, 28
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Площадь</span> : 90 м²
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Кол-во комнат</span> : две
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Срок выполнения</span> : 25 дней
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Стоимость ремонта</span> : 150 000 грн
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="works__slide-item works__image-wrapper decoration">
-                                                <img class="works__image" src="images/works-1.jpg" alt="">
-                                            </div>
+                    <ul class="preview__list">
+                        <li class="preview__item">Подскажем с чего начать</li>
+                        <li class="preview__item">Где можно сэкономить</li>
+                        <li class="preview__item">Составим бесплатно смету</li>
+                        <li class="preview__item">Даем гарантию</li>
+                    </ul>
+                    <a class="preview__link btn" href="#">Рассчитать стоимость</a>
+                </div>
+            </div>
+
+            <form class="preview__form decoration wow animate__fadeIn">
+                <div class="preview__form-title">
+                    Оставьте заявку и мы вам перезвоним
+                </div>
+                <label class="preview__label" for="name"></label>
+                <input class="preview__input preview__input--name" id="name" type="text" placeholder="Имя" required>
+                <label class="preview__label" for="tel"></label>
+                <input class="preview__input preview__input--tel" id="tel" type="tel" placeholder="+38 (___) ___-__-__" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                <button class="preview__btn btn" type="submit">Отправить</button>
+            </form>
+        </section>
+
+
+
+        <section class="works wow animate__fadeInUpBig" id="works">
+            <div class="container">
+                <div class="works__inner">
+                    <h2 class="works__title title section-title">
+                        Наши работы
+                    </h2>
+
+                    <div class="works__gallery">
+                        <div class="works__slider swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide works__slide">
+                                    <div class="works__slide-item">
+                                        <div class="works__slide-title">
+                                            Капитальный ремонт
                                         </div>
-                
-                                        <div class="swiper-slide works__slide">
-                                            <div class="works__slide-item">
-                                                <div class="works__slide-title">
-                                                    Косметический ремонт
-                                                </div>
-                                                <ul class="works__list">
-                                                    <li class="works__item">
-                                                        <span class="works__name">Aдресс объекта</span> : В. Александрийская, 9
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Площадь</span> : 64 м²
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Кол-во комнат</span> : одна
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Срок выполнения</span> : 21 дней
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Стоимость ремонта</span> : 178 000 грн
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="works__slide-item works__image-wrapper decoration">
-                                                <img class="works__image" src="images/works-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                
-                                        <div class="swiper-slide works__slide">
-                                            <div class="works__slide-item">
-                                                <div class="works__slide-title">
-                                                    Капитальный ремонт
-                                                </div>
-                                                <ul class="works__list">
-                                                    <li class="works__item">
-                                                        <span class="works__name">Aдресс объекта</span> : В. Космическая, 135
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Площадь</span> : 180 м²
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Кол-во комнат</span> : три
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Срок выполнения</span> : 48 дней
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Стоимость ремонта</span> : 240 000 грн
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="works__slide-item works__image-wrapper decoration">
-                                                <img class="works__image" src="images/works-3.jpg" alt="">
-                                            </div>
-                                        </div>
-                
-                                        <div class="swiper-slide works__slide">
-                                            <div class="works__slide-item">
-                                                <div class="works__slide-title">
-                                                    Эксклюзивный ремонт
-                                                </div>
-                                                <ul class="works__list">
-                                                    <li class="works__item">
-                                                        <span class="works__name">Aдресс объекта</span> : В. Морозова, 1
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Площадь</span> : 410 м²
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Кол-во комнат</span> : пять
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Срок выполнения</span> : 90 дней
-                                                    </li>
-                                                    <li class="works__item">
-                                                        <span class="works__name">Стоимость ремонта</span> : 479 000 грн
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="works__slide-item works__image-wrapper decoration">
-                                                <img class="works__image" src="images/works-4.jpg" alt="">
-                                            </div>
-                                        </div>
+                                        <ul class="works__list">
+                                            <li class="works__item">
+                                                <span class="works__name">Aдресс объекта</span> : В. Барсовой, 28
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Площадь</span> : 90 м²
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Кол-во комнат</span> : две
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Срок выполнения</span> : 25 дней
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Стоимость ремонта</span> : 150 000 грн
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="works__slide-item works__image-wrapper decoration">
+                                        <img class="works__image" src="images/works-1.jpg" alt="">
                                     </div>
                                 </div>
-                
-                                <div class="works__slider swiper-container gallery-thumbs">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide works__nav">
-                                            <img class="works__nav-image" src="images/works-1.jpg" alt="">
-                                            <span class="works__description">
+
+                                <div class="swiper-slide works__slide">
+                                    <div class="works__slide-item">
+                                        <div class="works__slide-title">
+                                            Косметический ремонт
+                                        </div>
+                                        <ul class="works__list">
+                                            <li class="works__item">
+                                                <span class="works__name">Aдресс объекта</span> : В. Александрийская, 9
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Площадь</span> : 64 м²
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Кол-во комнат</span> : одна
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Срок выполнения</span> : 21 дней
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Стоимость ремонта</span> : 178 000 грн
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="works__slide-item works__image-wrapper decoration">
+                                        <img class="works__image" src="images/works-2.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide works__slide">
+                                    <div class="works__slide-item">
+                                        <div class="works__slide-title">
+                                            Капитальный ремонт
+                                        </div>
+                                        <ul class="works__list">
+                                            <li class="works__item">
+                                                <span class="works__name">Aдресс объекта</span> : В. Космическая, 135
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Площадь</span> : 180 м²
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Кол-во комнат</span> : три
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Срок выполнения</span> : 48 дней
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Стоимость ремонта</span> : 240 000 грн
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="works__slide-item works__image-wrapper decoration">
+                                        <img class="works__image" src="images/works-3.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide works__slide">
+                                    <div class="works__slide-item">
+                                        <div class="works__slide-title">
+                                            Эксклюзивный ремонт
+                                        </div>
+                                        <ul class="works__list">
+                                            <li class="works__item">
+                                                <span class="works__name">Aдресс объекта</span> : В. Морозова, 1
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Площадь</span> : 410 м²
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Кол-во комнат</span> : пять
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Срок выполнения</span> : 90 дней
+                                            </li>
+                                            <li class="works__item">
+                                                <span class="works__name">Стоимость ремонта</span> : 479 000 грн
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="works__slide-item works__image-wrapper decoration">
+                                        <img class="works__image" src="images/works-4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="works__slider swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide works__nav">
+                                    <img class="works__nav-image" src="images/works-1.jpg" alt="">
+                                    <span class="works__description">
                                                 Капитальный ремонт двухкомнатной квартиры
                                             </span>
-                                        </div>
-                
-                                        <div class="swiper-slide works__nav">
-                                            <img class="works__nav-image" src="images/works-2.jpg" alt="">
-                                            <span class="works__description">
+                                </div>
+
+                                <div class="swiper-slide works__nav">
+                                    <img class="works__nav-image" src="images/works-2.jpg" alt="">
+                                    <span class="works__description">
                                                 Косметический ремонт однокомнатной квартиры
                                             </span>
-                                        </div>
-                
-                                        <div class="swiper-slide works__nav">
-                                            <img class="works__nav-image" src="images/works-3.jpg" alt="">
-                                            <span class="works__description">
+                                </div>
+
+                                <div class="swiper-slide works__nav">
+                                    <img class="works__nav-image" src="images/works-3.jpg" alt="">
+                                    <span class="works__description">
                                                 Капитальный ремонт трехкомнатной квартиры
                                             </span>
-                                        </div>
-                
-                                        <div class="swiper-slide works__nav">
-                                            <img class="works__nav-image" src="images/works-4.jpg" alt="">
-                                            <span class="works__description">
+                                </div>
+
+                                <div class="swiper-slide works__nav">
+                                    <img class="works__nav-image" src="images/works-4.jpg" alt="">
+                                    <span class="works__description">
                                                 Эксклюзивный ремонт пятикомнатной квартиры
                                             </span>
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="swiper-button-next swiper-button-white slider-arrow slider-arrow--next"></div>
-                                <div class="swiper-button-prev swiper-button-white slider-arrow slider-arrow--prev"></div>
                             </div>
                         </div>
+                        <div class="swiper-button-next swiper-button-white slider-arrow slider-arrow--next"></div>
+                        <div class="swiper-button-prev swiper-button-white slider-arrow slider-arrow--prev"></div>
                     </div>
-                </section>
-            
-                <section class="types" id="types">
-                    <div class="container">
-                        <div class="types__inner">
-                            <h2 class="types__title title section-title">
-                                Виды ремонтов
-                            </h2>
-                
-                            <div class="types__items decoration">
-                                <div class="types__item wow animate__fadeInLeftBig" style="background-image: url(images/types-1.jpg);">
-                                    <div class="types__preview">
-                                        <span class="types__name">
+                </div>
+            </div>
+        </section>
+
+        <section class="types" id="types">
+            <div class="container">
+                <div class="types__inner">
+                    <h2 class="types__title title section-title">
+                        Виды ремонтов
+                    </h2>
+
+                    <div class="types__items decoration">
+                        <div class="types__item wow animate__fadeInLeftBig" style="background-image: url(images/types-1.jpg);">
+                            <div class="types__preview">
+                                <span class="types__name">
                                             Косметический
                                         </span> От 1000 грн./м²
-                                    </div>
-                                    <div class="types__info">
-                                        <ul class="types__list">
-                                            <li class="types__list-item">
-                                                Выравнивание стен, пола, потолка
-                                            </li>                            
-                                            <li class="types__list-item">
-                                                Оклеивание стен обоями, окраска стен
-                                            </li>
-                                            <li class="types__list-item">
-                                                Укладка напольного покрытия
-                                            </li>
-                                            <li class="types__list-item">
-                                                Укладка керамической плитки
-                                            </li>                            
-                                        </ul>
-                
-                                        <a class="types__link btn" href="#">
+                            </div>
+                            <div class="types__info">
+                                <ul class="types__list">
+                                    <li class="types__list-item">
+                                        Выравнивание стен, пола, потолка
+                                    </li>
+                                    <li class="types__list-item">
+                                        Оклеивание стен обоями, окраска стен
+                                    </li>
+                                    <li class="types__list-item">
+                                        Укладка напольного покрытия
+                                    </li>
+                                    <li class="types__list-item">
+                                        Укладка керамической плитки
+                                    </li>
+                                </ul>
+
+                                <a class="types__link btn" href="#">
                                             Рассчитать стоимость
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="types__item wow animate__fadeInUpBig" style="background-image: url(images/types-1.jpg);">
-                                    <div class="types__preview">
-                                        <span class="types__name">
+                            </div>
+                        </div>
+                        <div class="types__item wow animate__fadeInUpBig" style="background-image: url(images/types-1.jpg);">
+                            <div class="types__preview">
+                                <span class="types__name">
                                                 Капитальный
                                         </span> От 1800 грн./м²
-                                    </div>
-                                    <div class="types__info">
-                                        <ul class="types__list">
-                                            <li class="types__list-item">
-                                                Выравнивание стен, пола, потолка
-                                            </li>
-                                            <li class="types__list-item">
-                                                Оклеивание стен обоями, окраска стен
-                                            </li>
-                                            <li class="types__list-item">
-                                                Укладка напольного покрытия
-                                            </li>
-                                            <li class="types__list-item">
-                                                Укладка керамической плитки
-                                            </li>
-                                            <li class="types__list-item">
-                                                Монтаж натяжных или многoуровневых потолков
-                                            </li>
-                                            <li class="types__list-item">
-                                                Электромонтажные работы
-                                            </li>
-                                        </ul>
-                
-                                        <a class="types__link btn" href="#">
+                            </div>
+                            <div class="types__info">
+                                <ul class="types__list">
+                                    <li class="types__list-item">
+                                        Выравнивание стен, пола, потолка
+                                    </li>
+                                    <li class="types__list-item">
+                                        Оклеивание стен обоями, окраска стен
+                                    </li>
+                                    <li class="types__list-item">
+                                        Укладка напольного покрытия
+                                    </li>
+                                    <li class="types__list-item">
+                                        Укладка керамической плитки
+                                    </li>
+                                    <li class="types__list-item">
+                                        Монтаж натяжных или многoуровневых потолков
+                                    </li>
+                                    <li class="types__list-item">
+                                        Электромонтажные работы
+                                    </li>
+                                </ul>
+
+                                <a class="types__link btn" href="#">
                                             Рассчитать стоимость
                                         </a>
-                                    </div>
-                                </div>
-                
-                                <div class="types__item wow animate__fadeInRightBig" style="background-image: url(images/types-1.jpg);">
-                                    <div class="types__preview">
-                                        <span class="types__name">
+                            </div>
+                        </div>
+
+                        <div class="types__item wow animate__fadeInRightBig" style="background-image: url(images/types-1.jpg);">
+                            <div class="types__preview">
+                                <span class="types__name">
                                                 Эксклюзив
                                         </span> От 3000 грн./м²
-                                    </div>
-                
-                                    <div class="types__info">
-                                        <ul class="types__list">
-                                            <li class="types__list-item">
-                                                Выравнивание стен, пола, потолка
-                                            </li>
-                                            <li class="types__list-item">
-                                                Перепланировка помещения
-                                            </li>
-                                            <li class="types__list-item">
-                                                Оклеивание стен обоями, окраска стен
-                                            </li>
-                                            <li class="types__list-item">
-                                                Укладка напольного покрытия
-                                            </li>
-                                            <li class="types__list-item">
-                                                Укладка керамической плитки
-                                            </li>
-                                            <li class="types__list-item">
-                                                Монтаж натяжных или многoуровневых потолков
-                                            </li>
-                                            <li class="types__list-item">
-                                                Электромонтажные работы
-                                            </li>
-                                            <li class="types__list-item">
-                                                Сантехнические работы
-                                            </li>
-                                        </ul>
-                
-                                        <a class="types__link btn" href="#">
+                            </div>
+
+                            <div class="types__info">
+                                <ul class="types__list">
+                                    <li class="types__list-item">
+                                        Выравнивание стен, пола, потолка
+                                    </li>
+                                    <li class="types__list-item">
+                                        Перепланировка помещения
+                                    </li>
+                                    <li class="types__list-item">
+                                        Оклеивание стен обоями, окраска стен
+                                    </li>
+                                    <li class="types__list-item">
+                                        Укладка напольного покрытия
+                                    </li>
+                                    <li class="types__list-item">
+                                        Укладка керамической плитки
+                                    </li>
+                                    <li class="types__list-item">
+                                        Монтаж натяжных или многoуровневых потолков
+                                    </li>
+                                    <li class="types__list-item">
+                                        Электромонтажные работы
+                                    </li>
+                                    <li class="types__list-item">
+                                        Сантехнические работы
+                                    </li>
+                                </ul>
+
+                                <a class="types__link btn" href="#">
                                             Рассчитать стоимость
                                         </a>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="container">
+                <div class="process__inner">
+                    <h2 class="process__title title section-title">
+                        Схема работы с нами
+                    </h2>
+
+                    <div class="process__tabs">
+                        <ul class="process__selectors tabs">
+                            <li class="process__tab tab active">
+                                <span class="process__category process__category--call">Вызов замерщика  </span>
+                            </li>
+                            <li class="process__tab tab">
+                                <span class="process__category process__category--measure">Выполнение замера  </span>
+                            </li>
+                            <li class="process__tab tab">
+                                <span class="process__category process__category--preparing">Составление сметы  </span>
+                            </li>
+                            <li class="process__tab tab">
+                                <span class="process__category process__category--work">Выполнение работ  </span>
+                            </li>
+                            <li class="process__tab tab">
+                                <span class="process__category process__category--report">Подача отчетности </span>
+                            </li>
+                            <li class="process__tab tab">
+                                <span class="process__category process__category--result">Сдача объекта</span>
+                            </li>
+                        </ul>
+
+                        <ul class="process__items tabs__wrapper">
+                            <li class="process__item tab-content">
+                                <p class="process__text">
+                                    Позвонив нам по телефону или оставив заявку на сайте, вы получите ответы на интересующие Вас вопросы относительно ремонта квартиры "под ключ", а для получения более детальной информации Вам будет рекомендован выезд прораба на объект в течение 24 часов
+                                    для выполнения замера.
+                                </p>
+                                <p class="process__text">
+                                    Каждому интересно, как сделать ремонт квартиры дешево. Один из наиболее простых вариантов - заказать проведение работ "под ключ".
+                                </p>
+
+                                <h3 class="process__subtitle title">
+                                    Особенности ремонта квартиры "под ключ"
+                                </h3>
+
+                                <div class="process__description-title">
+                                    Словосочетание «под ключ» подразумевает:
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            
-                <section class="process" id="process">
-                    <div class="container">
-                        <div class="process__inner">
-                            <h2 class="process__title title section-title">
-                                Схема работы с нами
-                            </h2>
-                
-                            <div class="process__tabs">                
-                                <ul class="process__selectors tabs">
-                                    <li class="process__tab tab active">
-                                        <span class="process__category process__category--call">Вызов замерщика  </span>
+
+                                <ul class="process__list">
+                                    <li class="process__list-item">
+                                        Комплексный подход: все виды работ, от сантехники до отделки.
                                     </li>
-                                    <li class="process__tab tab">
-                                        <span class="process__category process__category--measure">Выполнение замера  </span>
+                                    <li class="process__list-item">
+                                        Реализация дизайнерских проектов: учитываются все пожелания заказчика.
                                     </li>
-                                    <li class="process__tab tab">
-                                        <span class="process__category process__category--preparing">Составление сметы  </span>
+                                    <li class="process__list-item">
+                                        Получение готового результата: в помещение можно сразу въезжать.
                                     </li>
-                                    <li class="process__tab tab">
-                                        <span class="process__category process__category--work">Выполнение работ  </span>
-                                    </li>
-                                    <li class="process__tab tab">
-                                        <span class="process__category process__category--report">Подача отчетности </span>
-                                    </li>
-                                    <li class="process__tab tab">
-                                        <span class="process__category process__category--result">Сдача объекта</span>
+                                    <li class="process__list-item">
+                                        Кроме того, такой вид ремонта обычно обходится дешевле.
                                     </li>
                                 </ul>
-                
-                                <ul class="process__items tabs__wrapper">
-                                    <li class="process__item tab-content">
-                                        <p class="process__text">
-                                            Позвонив нам по телефону или оставив заявку на сайте, вы получите ответы на интересующие Вас вопросы относительно ремонта квартиры "под ключ", а для получения более детальной информации Вам будет рекомендован выезд прораба на объект в течение 24 часов
-                                            для выполнения замера.
-                                        </p>
-                                        <p class="process__text">
-                                            Каждому интересно, как сделать ремонт квартиры дешево. Один из наиболее простых вариантов - заказать проведение работ "под ключ".
-                                        </p>
-                
-                                        <h3 class="process__subtitle title">
-                                            Особенности ремонта квартиры "под ключ"
-                                        </h3>
-                
-                                        <div class="process__description-title">
-                                            Словосочетание «под ключ» подразумевает:
-                                        </div>
-                
-                                        <ul class="process__list">
-                                            <li class="process__list-item">
-                                                Комплексный подход: все виды работ, от сантехники до отделки.
-                                            </li>
-                                            <li class="process__list-item">
-                                                Реализация дизайнерских проектов: учитываются все пожелания заказчика.
-                                            </li>
-                                            <li class="process__list-item">
-                                                Получение готового результата: в помещение можно сразу въезжать.
-                                            </li>
-                                            <li class="process__list-item">
-                                                Кроме того, такой вид ремонта обычно обходится дешевле.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="process__item tab-content">
-                                        В течении 24 часов после вашего звонка прибудем прораб для выполнения замера. После чего вы уже сможете узнать примерную стоимость работ, исходя из размеров вашей квартиры.
-                                        <div class="process__description-title">
-                                            Процедура замера полностью бесплатная
-                                        </div>
-                                    </li>
-                                    <li class="process__item tab-content">
-                                        После выполнения замеров и предварительного подсчета стоимости, будет составлена смета, включающая в себя весь процесс ремонта вашей квартиры с 0 до 1.
-                                    </li>
-                                    <li class="process__item tab-content">
-                                        После согласования стоимости и сроков мы приступаем к выполнению работ немедленно, минимальное количество времени выполнения - 21 рабочий день. Возможно ускорение работ,при дополнительной оплате выходных дней.
-                                    </li>
-                                    <li class="process__item tab-content">
-                                        В течении всего времени выполнения работ вы будете получать отчеты о проделанной работе каждые 7 дней. Мы всегда держим наших клиентов в курсе всего,что проиходит на доверенном нам объекте
-                                    </li>
-                                    <li class="process__item tab-content">
-                                        После выполнения всех работ мы проводим капитальную уборку всего объекта(бесплатно) и заканчиваем все финальные задачи.
-                                        <div class="process__description-title">
-                                            Вы получите свою квартиру в эксплуатацию в течении 36 часов после окончания всех работ
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="process__item tab-content">
+                                В течении 24 часов после вашего звонка прибудем прораб для выполнения замера. После чего вы уже сможете узнать примерную стоимость работ, исходя из размеров вашей квартиры.
+                                <div class="process__description-title">
+                                    Процедура замера полностью бесплатная
+                                </div>
+                            </li>
+                            <li class="process__item tab-content">
+                                После выполнения замеров и предварительного подсчета стоимости, будет составлена смета, включающая в себя весь процесс ремонта вашей квартиры с 0 до 1.
+                            </li>
+                            <li class="process__item tab-content">
+                                После согласования стоимости и сроков мы приступаем к выполнению работ немедленно, минимальное количество времени выполнения - 21 рабочий день. Возможно ускорение работ,при дополнительной оплате выходных дней.
+                            </li>
+                            <li class="process__item tab-content">
+                                В течении всего времени выполнения работ вы будете получать отчеты о проделанной работе каждые 7 дней. Мы всегда держим наших клиентов в курсе всего,что проиходит на доверенном нам объекте
+                            </li>
+                            <li class="process__item tab-content">
+                                После выполнения всех работ мы проводим капитальную уборку всего объекта(бесплатно) и заканчиваем все финальные задачи.
+                                <div class="process__description-title">
+                                    Вы получите свою квартиру в эксплуатацию в течении 36 часов после окончания всех работ
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </section>
-            
-                <section class="price wow animate__fadeInLeftBig" id="price">
-                    <div class="container">
-                        <div class="price__inner">
-                            <h2 class="price__title title">
-                                Узнайте, сколько будет стоить
-                                <span>Ваш ремонт</span>
-                            </h2>
-                
-                            <div class="price__wrapper">
-                                <form class="price__form">
-                                    <input class="price__type" id="cosmetic" type="radio" name="type" checked>
-                                    <label class="price__label" for="cosmetic">Косметический </label>
-                
-                                    <input class="price__type" id="total" type="radio" name="type">
-                                    <label class="price__label" for="total">Капитальный</label>
-                
-                                    <input class="price__type" id="perfect" type="radio" name="type">
-                                    <label class="price__label" for="perfect">Экслюзив</label>
-                
-                                    <label class="price__area-label" for="area">
+                </div>
+            </div>
+        </section>
+
+        <section class="price wow animate__fadeInLeftBig" id="price">
+            <div class="container">
+                <div class="price__inner">
+                    <h2 class="price__title title">
+                        Узнайте, сколько будет стоить
+                        <span>Ваш ремонт</span>
+                    </h2>
+
+                    <div class="price__wrapper">
+                        <form class="price__form">
+                            <input class="price__type" id="cosmetic" type="radio" name="type" checked>
+                            <label class="price__label" for="cosmetic">Косметический </label>
+
+                            <input class="price__type" id="total" type="radio" name="type">
+                            <label class="price__label" for="total">Капитальный</label>
+
+                            <input class="price__type" id="perfect" type="radio" name="type">
+                            <label class="price__label" for="perfect">Экслюзив</label>
+
+                            <label class="price__area-label" for="area">
                                         Общая площадь, м²
                                     </label>
-                                    <input class="price__meter" id="area" type="number" min="0" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
-                                    <label for="range" class="price__range-label">
+                            <input class="price__meter" id="area" type="number" min="0" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                            <label for="range" class="price__range-label">
                                         Количество комнат
                                     </label>
-                                    <input id="range" type="range" value="1">
-                
-                
-                                    <input class="price__checkbox" id="walls" type="checkbox">
-                                    <label class="price__label-checkbox" for="walls">
+                            <input id="range" type="range" value="1">
+
+
+                            <input class="price__checkbox" id="walls" type="checkbox">
+                            <label class="price__label-checkbox" for="walls">
                                         Выравнивание стен
                                     </label>
-                                    <input class="price__checkbox" id="planning" type="checkbox">
-                                    <label class="price__label-checkbox" for="planning">
+                            <input class="price__checkbox" id="planning" type="checkbox">
+                            <label class="price__label-checkbox" for="planning">
                                             Перепланировка
                                     </label>
-                
-                                    <div class="price__more">
-                                        <div class="price__more-title">
-                                            Дополнительные опции
-                                        </div>
-                                        <div class="price__dropdown">
-                                            <ul class="price__list">
-                                                <li class="price__item">
-                                                    <input class="price__checkbox" id="electronics" type="checkbox">
-                                                    <label class="price__label-checkbox" for="electronics">
+
+                            <div class="price__more">
+                                <div class="price__more-title">
+                                    Дополнительные опции
+                                </div>
+                                <div class="price__dropdown">
+                                    <ul class="price__list">
+                                        <li class="price__item">
+                                            <input class="price__checkbox" id="electronics" type="checkbox">
+                                            <label class="price__label-checkbox" for="electronics">
                                                     Замена или изменение электропроводки
                                                     </label>
-                                                </li>
-                                                <li class="price__item">
-                                                    <input class="price__checkbox" id="plumber" type="checkbox">
-                                                    <label class="price__label-checkbox" for="plumber">
+                                        </li>
+                                        <li class="price__item">
+                                            <input class="price__checkbox" id="plumber" type="checkbox">
+                                            <label class="price__label-checkbox" for="plumber">
                                                     Замена или изменение сантехнической разводки
                                                     </label>
-                                                </li>
-                                                <li class="price__item">
-                                                    <input class="price__checkbox" id="sound" type="checkbox">
-                                                    <label class="price__label-checkbox" for="sound">
+                                        </li>
+                                        <li class="price__item">
+                                            <input class="price__checkbox" id="sound" type="checkbox">
+                                            <label class="price__label-checkbox" for="sound">
                                                     Звукоизоляция стен, пола или потолка
                                                     </label>
-                                                </li>
-                                                <li class="price__item">
-                                                    <input class="price__checkbox" id="floor" type="checkbox">
-                                                    <label class="price__label-checkbox" for="floor">
+                                        </li>
+                                        <li class="price__item">
+                                            <input class="price__checkbox" id="floor" type="checkbox">
+                                            <label class="price__label-checkbox" for="floor">
                                                     Полы с подогревом (теплый пол)
                                                     </label>
-                                                </li>
-                                                <li class="price__item">
-                                                    <input class="price__checkbox" id="radiator" type="checkbox">
-                                                    <label class="price__label-checkbox" for="radiator">
+                                        </li>
+                                        <li class="price__item">
+                                            <input class="price__checkbox" id="radiator" type="checkbox">
+                                            <label class="price__label-checkbox" for="radiator">
                                                     Замена радиаторов
                                                     </label>
-                                                </li>
-                                                <li class="price__item">
-                                                    <input class="price__checkbox" id="fixing" type="checkbox">
-                                                    <label class="price__label-checkbox" for="fixing">
+                                        </li>
+                                        <li class="price__item">
+                                            <input class="price__checkbox" id="fixing" type="checkbox">
+                                            <label class="price__label-checkbox" for="fixing">
                                                     Выравнивание пола (стяжка)
                                                     </label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                
-                                    <div class="price__total">
-                                        <span>Итого</span>
-                                        <span class="price__money">220426 грн</span>
-                                    </div>
-                
-                                    <button class="price__btn btn" type="submit">Получить Консультацию</button>
-                                </form>
-                
-                                <div class="price__description">
-                                    <div class="price__image-wrapper">
-                                        <img class="price__image" src="images/price.jpg" alt="">
-                                    </div>
-                
-                                    <div class="price__info">
-                                        <h4 class="price__info-title title">
-                                            Ремонт
-                                        </h4>
-                                        <p class="price__text">
-                                            Ремонт квартиры, дома или офиса – очень ответственный и сложный процесс, качество исполнения которого зависит от множества факторов.
-                                        </p>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-            
-                <section class="reviews wow animate__fadeInRightBig">
-                    <div class="reviews__inner">
-                        <h2 class="reviews__title title section-title">
-                            Отзывы
-                        </h2>
-                
-                        <div class="reviews__slider swiper-container">
-                
-                            <div class="swiper-wrapper">
-                
-                                <div class="swiper-slide" style="background-image:url(images/reviews-bg-1.jpg);">
-                                    <div class="container">
-                                        <p class="reviews__text">
-                                            Данная компания выполняла большой объём работы в частном доме 200кв. м на протяжении 8 месяцев. Все работы выполнены качественно. Цены доступные. Персонал, выполняющий работы, знает своё дело. Дают рекомендации по реализации идей ремонта -- как сделать
-                                            лучше и по умеренной цене. Отдельное спасибо сотруднику Алексею , под начальством и непосредственным участием которого было выполнено 99,8% работ !!! Я остался очень доволен и не жалею, что обратился к данной компании. Рекомендую!
-                                        </p>
-                                        <img class="reviews__image" src="images/avatar-1.png" alt="">
-                                        <div class="reviews__name">
-                                            Константин
-                                        </div>
-                                        <div class="reviews__address">
-                                            Дом по улице ул. Комбайновая
-                                        </div>
-                                    </div>
-                                </div>
-                
-                                <div class="swiper-slide" style="background-image:url(images/reviews-bg-2.jpg);">
-                                    <div class="container">
-                                        <p class="reviews__text">
-                                            Данная компания выполняла большой объём работы в частном доме 410кв. м. на протяжении 3х месяцев по ускоренной программе оплаты выходных дней. Работа выполнена по европейским стандартам, и в оговоренные сроки. Я получал отчеты каждую неделю, и был в курсе
-                                            всего,что проиходит на объекте. В качестве бонуса я получил гарантию поддержки на 5 лет. Руководство фирмы готово подстроиться под любую финансовую ситуацию клиента, и несомненно оставит его довольным. Крайне рекомендую данную
-                                            фирму!
-                                        </p>
-                                        <img class="reviews__image" src="images/avatar-2.jpg" alt="">
-                                        <div class="reviews__name">
-                                            Александр
-                                        </div>
-                                        <div class="reviews__address">
-                                            Дом по улице ул. Морозова
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="swiper-pagination"></div>
-                
-                        </div>
-                    </div>
-                </section>
-            </main>
-        </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__items">
-                        <div class="footer__item footer__item--logo">
-                            <img class="footer__logo" src="images/logo.png" alt="">
-                            <p class="footer__text">
-                                Компания "Харьковстрой" входит в число лучших ремонтно-отделочных компаний Харькова, предоставляющих высокий сервис и удобство обслуживания нашим клиентам.
-                            </p>
+                            <div class="price__total">
+                                <span>Итого</span>
+                                <span class="price__money">220426 грн</span>
+                            </div>
+
+                            <button class="price__btn btn" type="submit">Получить Консультацию</button>
+                        </form>
+
+                        <div class="price__description">
+                            <div class="price__image-wrapper">
+                                <img class="price__image" src="images/price.jpg" alt="">
+                            </div>
+
+                            <div class="price__info">
+                                <h4 class="price__info-title title">
+                                    Ремонт
+                                </h4>
+                                <p class="price__text">
+                                    Ремонт квартиры, дома или офиса – очень ответственный и сложный процесс, качество исполнения которого зависит от множества факторов.
+                                </p>
+                            </div>
                         </div>
-        
-                        <address class="footer__item footer__item--contacts">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews wow animate__fadeInRightBig">
+            <div class="reviews__inner">
+                <h2 class="reviews__title title section-title">
+                    Отзывы
+                </h2>
+
+                <div class="reviews__slider swiper-container">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" style="background-image:url(images/reviews-bg-1.jpg);">
+                            <div class="container">
+                                <p class="reviews__text">
+                                    Данная компания выполняла большой объём работы в частном доме 200кв. м на протяжении 8 месяцев. Все работы выполнены качественно. Цены доступные. Персонал, выполняющий работы, знает своё дело. Дают рекомендации по реализации идей ремонта -- как сделать
+                                    лучше и по умеренной цене. Отдельное спасибо сотруднику Алексею , под начальством и непосредственным участием которого было выполнено 99,8% работ !!! Я остался очень доволен и не жалею, что обратился к данной компании.
+                                    Рекомендую!
+                                </p>
+                                <img class="reviews__image" src="images/avatar-1.png" alt="">
+                                <div class="reviews__name">
+                                    Константин
+                                </div>
+                                <div class="reviews__address">
+                                    Дом по улице ул. Комбайновая
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" style="background-image:url(images/reviews-bg-2.jpg);">
+                            <div class="container">
+                                <p class="reviews__text">
+                                    Данная компания выполняла большой объём работы в частном доме 410кв. м. на протяжении 3х месяцев по ускоренной программе оплаты выходных дней. Работа выполнена по европейским стандартам, и в оговоренные сроки. Я получал отчеты каждую неделю, и был в курсе
+                                    всего,что проиходит на объекте. В качестве бонуса я получил гарантию поддержки на 5 лет. Руководство фирмы готово подстроиться под любую финансовую ситуацию клиента, и несомненно оставит его довольным. Крайне рекомендую
+                                    данную фирму!
+                                </p>
+                                <img class="reviews__image" src="images/avatar-2.jpg" alt="">
+                                <div class="reviews__name">
+                                    Александр
+                                </div>
+                                <div class="reviews__address">
+                                    Дом по улице ул. Морозова
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__items">
+                    <div class="footer__item footer__item--logo">
+                        <img class="footer__logo" src="images/logo.png" alt="">
+                        <p class="footer__text">
+                            Компания "Харьковстрой" входит в число лучших ремонтно-отделочных компаний Харькова, предоставляющих высокий сервис и удобство обслуживания нашим клиентам.
+                        </p>
+                    </div>
+
+                    <address class="footer__item footer__item--contacts">
                             <div class="footer__title title">
                                 Контакты
                             </div>
@@ -656,27 +652,26 @@
                                 </li>
                             </ul>
                         </address>
-        
-                        <div class="footer__item footer__item--form">
-                            <div class="footer__title title">
-                                Оставить заявку
-                            </div>
-                            <form class="footer__form">
-                                <label class="footer__label">
+
+                    <div class="footer__item footer__item--form">
+                        <div class="footer__title title">
+                            Оставить заявку
+                        </div>
+                        <form class="footer__form">
+                            <label class="footer__label">
                                     <input class="footer__input" type="text" placeholder="Имя" required>
                                 </label>
-                                <label class="footer__label">
+                            <label class="footer__label">
                                     <input class="footer__input" type="tel" placeholder="+38 (___) ___-__-__" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                                 </label>
-        
-                                <button class="footer__btn btn" type="submit">Отправить</button>
-                            </form>
-                        </div>
+
+                            <button class="footer__btn btn" type="submit">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </footer>  
-    </div>
+        </div>
+    </footer>
 
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

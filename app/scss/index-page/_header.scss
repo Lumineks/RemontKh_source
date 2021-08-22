@@ -5,15 +5,18 @@
     background-color: #000;
 
     &__inner {
-        height: 92px;
+        padding: 18px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include r(940) {
+            flex-direction: row-reverse;
+        }
     }
 
     &__logo {
-        max-width: 281px;
-        height: 57px;
+        display: block;
 
         @include r(500) {
             max-width: 190px;
@@ -22,6 +25,7 @@
     }
 
     &__image {
+        display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -32,7 +36,7 @@
     }
 
     &__menu {
-        transition: left .3s;
+        transition: left 0.3s;
 
         @include r(940) {
             position: absolute;
@@ -62,13 +66,13 @@
         }
     }
 
-    &__item {       
-        &+& {
-            margin-left: 24px;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 24px;
 
             @include r(940) {
-                margin-left: 0;
-                margin-top: 20px;
+                margin-right: 0;
+                margin-bottom: 20px;
             }
         }
     }
@@ -76,16 +80,21 @@
     &__link {
         font-weight: 600px;
         color: #fff;
-        transition: all .3s;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+        position: relative;
+        outline-color: $yellow;
+        outline-offset: 5px;
 
         @include r(940) {
             display: block;
             padding-left: 20px;
             font-size: 24px;
         }
+
         &.active {
             color: $yellow;
         }
+
         &:hover {
             color: $yellow;
         }
@@ -99,54 +108,60 @@
         display: none;
 
         @include r(940) {
-            display: block;
             position: relative;
+            display: block;
             width: 35px;
             height: 24px;
+            border: none;
             z-index: 20;
+            background-color: transparent;
+        }
+
+        span {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            top: 10px;
+            left: 0;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #fff;
+            left: 0;
+        }
+
+        &::before {
+            top: 0;
+            transition: transform 0.3s ease, top 0.3s ease;
+        }
+
+        &::after {
+            bottom: 0;
+            transition: transform 0.3s ease, bottom 0.3s ease;
+        }
+
+        &.active {
+            &::before {
+                transform: rotate(45deg);
+                top: 10px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 10px;
+            }
 
             span {
-                background-color: #fff;
-                width: 100%;
-                height: 4px;
-                position: absolute;
-                top: 10px;
-                transition: all .3s;
-            }
-
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                background-color: #fff;
-                transition: all .3s;
-            }
-
-            &::before {
-                top: 0;
-            }
-
-            &::after {
-                bottom: 0;
-            }
-
-            &.active {
-                &::before {
-                    transform: rotate(45deg);
-                    top: 10px;
-                }
-
-                &::after {
-                    transform: rotate(-45deg);
-                    bottom: 10px;
-                }
-
-                span {
-                    transform: scale(0);
-                }
+                transform: scale(0);
             }
         }
     }
+
 }
