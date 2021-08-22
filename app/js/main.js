@@ -48,6 +48,7 @@ let content = document.querySelectorAll('.tab-content');
 let tabsContent = document.querySelector('.process__items');
 let header = document.querySelector('.header');
 let links = document.querySelectorAll('.header__link');
+const logo = document.querySelector('.header__logo');
 
 for (let i = 0; i < links.length; i++) {
 
@@ -55,9 +56,10 @@ for (let i = 0; i < links.length; i++) {
         e.preventDefault();
 
 
-        let id = links[i].getAttribute('href').slice(1);
-        if (!links[i].classList.contains('active'))
+        const id = links[i].getAttribute('href');
+        if (!links[i].classList.contains('active')) {
             smoothScroll(id);
+        }
 
         clearLinks();
         links[i].classList.add('active');
@@ -67,7 +69,13 @@ for (let i = 0; i < links.length; i++) {
     });
 }
 
+logo.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    const id = logo.getAttribute('href');
 
+    smoothScroll(id);
+});
 
 
 
@@ -321,31 +329,10 @@ function elmYPosition(eID) {
 
 
 function smoothScroll(eID) {
-    let startY = currentYPosition() + 100;
-    let stopY = elmYPosition(eID);
-    let distance = stopY > startY ? stopY - startY : startY - stopY;
-    if (distance < 100) {
-        scrollTo(0, stopY);
-        return;
-    }
-    let speed = Math.round(distance / 100);
-    if (speed >= 20) speed = 20;
-    let step = Math.round(distance / 25);
-    let leapY = stopY > startY ? startY + step : startY - step;
-    let timer = 0;
-    if (stopY > startY) {
-        for (let i = startY; i < stopY; i += step) {
-            setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-            leapY += step;
-            if (leapY > stopY) leapY = stopY;
-            timer++;
-        }
-        return;
-    }
-    for (let i = startY; i > stopY; i -= step) {
-        setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-        leapY -= step;
-        if (leapY < stopY) leapY = stopY;
-        timer++;
-    }
+    const section = document.querySelector(eId);
+    window.scroll({
+        top: getCoords(section),
+        left: 0,
+        behavior: 'smooth'
+    });
 }
