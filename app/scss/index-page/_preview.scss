@@ -3,29 +3,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    height: 100%;
+    height: 100vh;
+    min-height: 700px;
     position: relative;
+    padding-top: 100px;
     margin-bottom: 90px;
 
-    @include r(1024) {
-        min-height: 700px;
+    @include r($xl) {
+        padding-top: 81px;
     }
 
-    @include r(630) {
-        margin-bottom: 180px;
+    @media (max-height: 700px) and (min-width: 768px) {
+        min-height: 560px;
     }
 
     &__inner {
-        padding-top: 288px;
+        padding-top: 17vh;
         color: #fff;
 
-        @include r(1024) {
-        padding-top: 180px;
-        }
-
-        @include r(768) {
-            padding-top: 120px;
+        @media (max-height: 700px) {
+            padding-top: 5vh;
         }
     }
 
@@ -44,21 +41,21 @@
     &__text {
         margin-bottom: 25px;
         font-size: 24px;
-        line-height: 30px;
+        line-height: 1.25;
     }
 
     &__list {
         display: flex;
         margin-bottom: 33px;
 
-        @include r(768) {
+        @include r($md) {
             display: block;
         }
     }
 
     &__item {
         font-size: 14px;
-        line-height: 15px;
+        line-height: 1;
         padding-left: 15px;
         position: relative;
 
@@ -73,49 +70,47 @@
             border-radius: 50%;
         }
 
-        &+& {
-            margin-left: 28px;
+        &:not(:last-child) {
+            margin-right: 28px;
 
-            @include r(768) {
-                margin-left: 0;
-                margin-top: 20px;
+            @include r($md) {
+                margin-right: 0;
+                margin-bottom: 20px;
             }
         }
     }
 
     &__link {
-        min-width: 211px;
-        height: 47px;
-        padding-top: 10px;
+        padding: 10px 15px;
         font-size: 18px;
-        line-height: 23px;
+        line-height: 1.3;
     }
 
     &__form {
-        transform: translateX(-50%);
+        transform: translate(-50%, 50%);
         position: absolute;
         z-index: 1;
         left: 50%;
-        bottom: -80px;
-        height: 155px;
-        padding: 19px 69px 30px 70px;
+        bottom: 0;
+        padding: 27px 69px 30px 70px;
         background-color: #404040;
         text-align: center;
         border-radius: 6px;
         max-width: 762px;
         width: 100%;
 
-        @include r(800) {
-            max-width: 95%;
+        @include r($lg) {
+            max-width: 700px;
             padding: 19px 40px 30px;
         }
 
-        @include r(630) {
-            height: auto;
-            max-width: 100%;
-            bottom: -25%;
-            left: 0;
-            transform: translateX(0);
+        @include r($md) {
+            max-width: 90%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        @include r($sm) {
 
             &::before,
             &::after {
@@ -128,62 +123,97 @@
         margin-bottom: 30px;
         font-weight: 700;
         font-size: 22px;
-        line-height: 28px;
+        line-height: 1.3;
         color: #fff;
+
+        @include r($sm) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
     }
 
-    &__label {
-        width: 1px;
-        height: 1px;
-        opacity: 0;
-        visibility: hidden;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        @include r($md) {
+            justify-content: space-around;
+        }
+
+        @include r($sm) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @include r($xsm) {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
     }
 
     &__input {
-        background: rgba(27, 27, 27, 0.7);
+        background-color: rgba(27, 27, 27, 0.7);
         box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-        padding: 0 15px;
-        height: 40px;
+        padding: 8px 15px;
         width: 100%;
         margin-right: 20px;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         color: #fff;
         border: 2px solid transparent;
-        outline: transparent;
-        transition: border-color .3s;
+        transition: border-color 0.3s;
 
-        @include r(630) {
-            display: block;
-            margin: 0 auto 15px;
+        @include r($sm) {
+            margin-bottom: 20px;
+            margin-right: 0;
         }
 
-        &:hover,
-        &:focus {
+        &:hover {
             border-color: $yellow;
+        }
+
+        &:focus {
+            outline-color: #fff;
         }
 
         &::placeholder {
             font-size: 16px;
-            line-height: 20px;
+            line-height: 1.25;
             color: #A9A9A9;
         }
 
         &--name {
             max-width: 40%;
 
-            @include r(630) {
-                max-width: 300px;
+            @include r($sm) {
+                max-width: 100%;
+                width: 42%;
+                margin-right: 30px;
+            }
 
+            @include r($xsm) {
+                width: auto;
+                margin-right: 0;
             }
         }
 
         &--tel {
             max-width: 28%;
 
-            @include r(630) {
-                max-width: 300px;
+            @include r($md) {
+                max-width: 173px;
+            }
+
+            @include r($sm) {
+                width: 34%;
+                max-width: 100%;
+                flex: 0 0 165px;
+            }
+
+            @include r($xsm) {
+                flex: auto;
+                width: auto;
 
             }
         }
@@ -191,12 +221,18 @@
 
     &__btn {
         font-size: 16px;
-        line-height: 20px;
-        min-width: 20%;
-        height: 40px;
+        line-height: 1.25;
+        max-width: 20%;
+        padding: 8px 21px;
 
-        @include r(630) {
-            min-width: 200px;
+        @include r($md) {
+            max-width: 35%;
+            padding: 8px 16px;
+        }
+
+        @include r($sm) {
+            max-width: 100%;
+            padding: 8px 40px;
         }
     }
 }

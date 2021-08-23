@@ -10,7 +10,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @include r(940) {
+        @include r($lg) {
             flex-direction: row-reverse;
         }
     }
@@ -18,7 +18,7 @@
     &__logo {
         display: block;
 
-        @include r(500) {
+        @include r($sm) {
             max-width: 190px;
             height: 45px;
         }
@@ -30,7 +30,7 @@
         height: 100%;
         object-fit: cover;
 
-        @include r(500) {
+        @include r($sm) {
             object-fit: contain;
         }
     }
@@ -38,7 +38,7 @@
     &__menu {
         transition: left 0.3s;
 
-        @include r(940) {
+        @include r($lg) {
             position: absolute;
             left: -100%;
             top: 0;
@@ -48,7 +48,7 @@
             background-color: #000;
         }
 
-        @include r(768) {
+        @include r($md) {
             width: 80%;
         }
 
@@ -61,7 +61,7 @@
     &__list {
         display: flex;
 
-        @include r(940) {
+        @include r($lg) {
             display: block;
         }
     }
@@ -70,9 +70,8 @@
         &:not(:last-child) {
             margin-right: 24px;
 
-            @include r(940) {
+            @include r($lg) {
                 margin-right: 0;
-                margin-bottom: 20px;
             }
         }
     }
@@ -85,9 +84,9 @@
         outline-color: $yellow;
         outline-offset: 5px;
 
-        @include r(940) {
+        @include r($lg) {
             display: block;
-            padding-left: 20px;
+            padding: 10px 0 10px 20px;
             font-size: 24px;
         }
 
@@ -107,7 +106,7 @@
     &__burger {
         display: none;
 
-        @include r(940) {
+        @include r($lg) {
             position: relative;
             display: block;
             width: 35px;
@@ -163,5 +162,4 @@
             }
         }
     }
-
 }

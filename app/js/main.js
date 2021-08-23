@@ -77,7 +77,9 @@ logo.addEventListener('click', (e) => {
     smoothScroll(id);
 });
 
-
+const phoneMask = IMask(document.querySelector('.preview__input--tel'), {
+    mask: '+{38}(\\000)000-00-00',
+});
 
 
 

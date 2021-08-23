@@ -20,11 +20,11 @@
                 <a class="header__logo" href="#preview">
                     <img class="header__image" src="images/logo.png" width="281" height="57" alt="Логотип">
                 </a>
-                
+
                 <button class="header__burger" type="button" aria-label="Открыть меню">
                     <span></span>
                 </button>
-                
+
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li class="header__item">
@@ -62,9 +62,9 @@
                             Ремонт квартир
                         </span> под ключ в Харькове
                     </h1>
-                    <div class="preview__text">
+                    <p class="preview__text">
                         Закажите ремонт Вашей мечты по доступным ценам.
-                    </div>
+                    </p>
                     <ul class="preview__list">
                         <li class="preview__item">Подскажем с чего начать</li>
                         <li class="preview__item">Где можно сэкономить</li>
@@ -75,21 +75,24 @@
                 </div>
             </div>
 
-            <form class="preview__form decoration wow animate__fadeIn">
-                <div class="preview__form-title">
+            <form class="preview__form decoration">
+                <p class="preview__form-title">
                     Оставьте заявку и мы вам перезвоним
+                </p>
+                <div class="preview__box">
+                    <label class="preview__label sr-only" for="name">Введите ваше имя</label>
+                    <input class="preview__input preview__input--name" id="name" name="[contact]name" type="text" placeholder="Имя" required>
+                    <label class="preview__label sr-only" for="tel">Введите ваш номер телефона</label>
+                    <input class="preview__input preview__input--tel" id="tel" name="[contact]phone" type="tel" required placeholder="+38 (___) ___-__-__">
+
+                    <button class="preview__btn btn" type="submit">Отправить</button>
                 </div>
-                <label class="preview__label" for="name"></label>
-                <input class="preview__input preview__input--name" id="name" type="text" placeholder="Имя" required>
-                <label class="preview__label" for="tel"></label>
-                <input class="preview__input preview__input--tel" id="tel" type="tel" placeholder="+38 (___) ___-__-__" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                <button class="preview__btn btn" type="submit">Отправить</button>
             </form>
         </section>
 
 
 
-        <section class="works wow animate__fadeInUpBig" id="works">
+        <section class="works" id="works">
             <div class="container">
                 <div class="works__inner">
                     <h2 class="works__title title section-title">
@@ -672,8 +675,8 @@
         </div>
     </footer>
 
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
