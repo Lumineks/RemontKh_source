@@ -48,7 +48,6 @@ let content = document.querySelectorAll('.tab-content');
 let tabsContent = document.querySelector('.process__items');
 let header = document.querySelector('.header');
 let links = document.querySelectorAll('.header__link');
-const logo = document.querySelector('.header__logo');
 
 for (let i = 0; i < links.length; i++) {
 
@@ -69,13 +68,15 @@ for (let i = 0; i < links.length; i++) {
     });
 }
 
-logo.addEventListener('click', (e) => {
+
+const scrollElements = document.querySelectorAll('.js-scroll');
+
+scrollElements.forEach(el => el.addEventListener('click', (e) => {
     e.preventDefault();
     
-    const id = logo.getAttribute('href');
-
+    const id = el.getAttribute('href');
     smoothScroll(id);
-});
+}));
 
 const phoneMask = IMask(document.querySelector('.preview__input--tel'), {
     mask: '+{38}(\\000)000-00-00',

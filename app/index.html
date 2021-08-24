@@ -17,7 +17,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="header__logo" href="#preview">
+                <a class="header__logo js-scroll" href="#preview">
                     <img class="header__image" src="images/logo.png" width="281" height="57" alt="Логотип">
                 </a>
 
@@ -71,7 +71,7 @@
                         <li class="preview__item">Составим бесплатно смету</li>
                         <li class="preview__item">Даем гарантию</li>
                     </ul>
-                    <a class="preview__link btn" href="#">Рассчитать стоимость</a>
+                    <a class="preview__link btn js-scroll" href="#price">Рассчитать стоимость</a>
                 </div>
             </div>
 
@@ -90,8 +90,6 @@
             </form>
         </section>
 
-
-
         <section class="works" id="works">
             <div class="container">
                 <div class="works__inner">
@@ -101,12 +99,12 @@
 
                     <div class="works__gallery">
                         <div class="works__slider swiper-container gallery-top">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide works__slide">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide works__slide">
                                     <div class="works__slide-item">
-                                        <div class="works__slide-title">
+                                        <h3 class="works__slide-title">
                                             Капитальный ремонт
-                                        </div>
+                                        </h3>
                                         <ul class="works__list">
                                             <li class="works__item">
                                                 <span class="works__name">Aдресс объекта</span> : В. Барсовой, 28
@@ -126,15 +124,15 @@
                                         </ul>
                                     </div>
                                     <div class="works__slide-item works__image-wrapper decoration">
-                                        <img class="works__image" src="images/works-1.jpg" alt="">
+                                        <img class="works__image" src="images/works-1.jpg" alt="Интерьер комнаты в зелено-белых тонах">
                                     </div>
-                                </div>
+                                </li>
 
-                                <div class="swiper-slide works__slide">
+                                <li class="swiper-slide works__slide">
                                     <div class="works__slide-item">
-                                        <div class="works__slide-title">
+                                        <h3 class="works__slide-title">
                                             Косметический ремонт
-                                        </div>
+                                        </h3>
                                         <ul class="works__list">
                                             <li class="works__item">
                                                 <span class="works__name">Aдресс объекта</span> : В. Александрийская, 9
@@ -154,15 +152,15 @@
                                         </ul>
                                     </div>
                                     <div class="works__slide-item works__image-wrapper decoration">
-                                        <img class="works__image" src="images/works-2.jpg" alt="">
+                                        <img class="works__image" src="images/works-2.jpg" alt="Кухня в черно-белых тонах">
                                     </div>
-                                </div>
+                                </li>
 
-                                <div class="swiper-slide works__slide">
+                                <li class="swiper-slide works__slide">
                                     <div class="works__slide-item">
-                                        <div class="works__slide-title">
+                                        <h3 class="works__slide-title">
                                             Капитальный ремонт
-                                        </div>
+                                        </h3>
                                         <ul class="works__list">
                                             <li class="works__item">
                                                 <span class="works__name">Aдресс объекта</span> : В. Космическая, 135
@@ -182,15 +180,15 @@
                                         </ul>
                                     </div>
                                     <div class="works__slide-item works__image-wrapper decoration">
-                                        <img class="works__image" src="images/works-3.jpg" alt="">
+                                        <img class="works__image" src="images/works-3.jpg" alt="Светлая комната с видом на город">
                                     </div>
-                                </div>
+                                </li>
 
-                                <div class="swiper-slide works__slide">
+                                <li class="swiper-slide works__slide">
                                     <div class="works__slide-item">
-                                        <div class="works__slide-title">
+                                        <h3 class="works__slide-title">
                                             Эксклюзивный ремонт
-                                        </div>
+                                        </h3>
                                         <ul class="works__list">
                                             <li class="works__item">
                                                 <span class="works__name">Aдресс объекта</span> : В. Морозова, 1
@@ -210,40 +208,40 @@
                                         </ul>
                                     </div>
                                     <div class="works__slide-item works__image-wrapper decoration">
-                                        <img class="works__image" src="images/works-4.jpg" alt="">
+                                        <img class="works__image" src="images/works-4.jpg" alt="Большая комната с панорамным видом на город">
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
 
-                        <div class="works__slider swiper-container gallery-thumbs">
+                        <div class="works__slider swiper-container gallery-thumbs" aria-hidden>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide works__nav">
-                                    <img class="works__nav-image" src="images/works-1.jpg" alt="">
-                                    <span class="works__description">
-                                                Капитальный ремонт двухкомнатной квартиры
-                                            </span>
+                                    <img class="works__nav-image" src="images/works-1.jpg" alt="Интерьер комнаты в зелено-белых тонах">
+                                    <p class="works__description">
+                                        Капитальный ремонт двухкомнатной квартиры
+                                    </p>
                                 </div>
 
                                 <div class="swiper-slide works__nav">
-                                    <img class="works__nav-image" src="images/works-2.jpg" alt="">
-                                    <span class="works__description">
-                                                Косметический ремонт однокомнатной квартиры
-                                            </span>
+                                    <img class="works__nav-image" src="images/works-2.jpg" alt="Кухня в черно-белых тонах">
+                                    <p class="works__description">
+                                        Косметический ремонт однокомнатной квартиры
+                                    </p>
                                 </div>
 
                                 <div class="swiper-slide works__nav">
-                                    <img class="works__nav-image" src="images/works-3.jpg" alt="">
-                                    <span class="works__description">
-                                                Капитальный ремонт трехкомнатной квартиры
-                                            </span>
+                                    <img class="works__nav-image" src="images/works-3.jpg" alt="Светлая комната с видом на город">
+                                    <p class="works__description">
+                                        Капитальный ремонт трехкомнатной квартиры
+                                    </p>
                                 </div>
 
                                 <div class="swiper-slide works__nav">
-                                    <img class="works__nav-image" src="images/works-4.jpg" alt="">
-                                    <span class="works__description">
-                                                Эксклюзивный ремонт пятикомнатной квартиры
-                                            </span>
+                                    <img class="works__nav-image" src="images/works-4.jpg" alt="Большая комната с панорамным видом на город">
+                                    <p class="works__description">
+                                        Эксклюзивный ремонт пятикомнатной квартиры
+                                    </p>
                                 </div>
                             </div>
                         </div>
